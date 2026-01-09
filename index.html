@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang= "en">
-<head> 
-    <meta charset = "UTF-8">
-    <title> Calculator </title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class = "Calculator">
+<div class="calculator">
     <input type="text" id="display" disabled>
 
     <div class="buttons">
-        <button onclick="cleardisplay()">C</button>
-        <button onclick="appendvalue('/')">/</button>
-        <button onclick="appendvalue('*')">*</button>
-        <button onclick="appendValue('-')">-</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendValue('/')">÷</button>
+        <button onclick="appendValue('*')">×</button>
+        <button onclick="appendValue('-')">−</button>
 
         <button onclick="appendValue('7')">7</button>
         <button onclick="appendValue('8')">8</button>
@@ -29,11 +29,12 @@
         <button onclick="appendValue('2')">2</button>
         <button onclick="appendValue('3')">3</button>
 
-        <button onclick="appendValue('0')">0</button>
+        <button class="zero" onclick="appendValue('0')">0</button>
         <button onclick="appendValue('.')">.</button>
         <button onclick="calculate()">=</button>
     </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
