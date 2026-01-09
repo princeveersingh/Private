@@ -36,3 +36,11 @@ button {
 .zero {
     grid-column: span 2;
 }
+
+.equals {
+    grid-row: span 2;
+}
+
+.empty {
+    visibility: hidden;
+}
